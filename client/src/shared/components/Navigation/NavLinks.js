@@ -27,7 +27,7 @@ const NavLinks = props => {
             <NavLink to="/contactUs" exact>Contact Us</NavLink>
         </li>
         {auth.isLoggedIn && (<li>
-            <Dropdown classname = "dropdown">
+            <Dropdown className = "dropdown">
                 <Dropdown.Toggle variant="success" id="dropdown-basic"> 
                     vanita
                 </Dropdown.Toggle>

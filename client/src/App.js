@@ -9,8 +9,10 @@ import Awarness from './Awarness/pages/awarness';
 import AboutUs from './AboutUs/pages/aboutUs';
 import ContactUs from './ContactUs/pages/contactus';
 import Auth from './user/pages/auth';
+import UserProfile from './user/pages/user-profile';
 import Dashboard from './user/pages/dashboard';
 import Settings from './user/pages/settings';
+//import UpdateUserProfile from './user/pages/update-user-profile';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { AuthContext } from './shared/context/auth-context';
 
@@ -45,11 +47,16 @@ const App = () => {
           <Route path= "/contactUs">
             <ContactUs />
           </Route>
+          <Route path= "/userProfile">
+            <UserProfile />
+          </Route>
           <Route path= "/dashboard">
             <Dashboard />
-          </Route><Route path= "/settings">
+          </Route>
+          <Route path= "/settings">
             <Settings />
           </Route>
+          
           <Redirect to="/" />
         </Switch>
     );
